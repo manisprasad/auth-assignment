@@ -112,11 +112,12 @@ docker run --env-file .env -p 8080:8080 auth-assignment
 
 Base URL: `http://localhost:8080`
 
-| Method | Endpoint        | Description                  |
-| ------ | --------------- | ---------------------------- |
-| POST   | `/api/register` | Register a new user          |
-| POST   | `/api/login`    | Login and receive JWT token  |
-| GET    | `/api/profile`  | Get user profile (protected) |
+| Method | Endpoint        | Description                                                        |
+| ------ | --------------- | ------------------------------------------------------------------ |
+| POST   | `/api/register` | Register a new user — requires `fullName`, `email`, and `password` |
+| POST   | `/api/login`    | Login and receive JWT token — requires `email` and `password`      |
+| GET    | `/api/profile`  | Get user profile (protected)                                       |
+
 
 ---
 
