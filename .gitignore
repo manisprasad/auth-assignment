@@ -1,0 +1,52 @@
+# Node modules
+node_modules/
+
+# Output directory
+dist/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Debug / Coverage / Test
+coverage/
+nyc_output/
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+
+# Optional npm/yarn lock if using just one
+# yarn.lock
+# package-lock.json
+
+# Build artifacts
+build/
+
+# Compiled JSON files or database dumps (optional)
+*.json
+*.bak
+
+# Runtime files
+.pids
+*.pid
+
+# Ignore local dev tools / editor configs
+*.swp
+*.swo
+
+# Ignore compiled env file if generated
+.env.local
+.env.*.local
