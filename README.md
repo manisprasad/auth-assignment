@@ -1,5 +1,3 @@
-Here’s your **raw `.md` file** for the **Auth Backend API** documentation, written with proper Markdown formatting and embedded HTML elements for enhanced readability:
-
 ```markdown
 <!-- README.md -->
 
