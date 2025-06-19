@@ -1,6 +1,3 @@
-Here's a refined and professional version of your `README.md` with corrected formatting, consistent sectioning, improved grammar, and clarity:
-
-
 <!-- README.md -->
 
 <h1 align="center">🔐 Auth Backend API</h1>
@@ -29,21 +26,20 @@ It features JWT authentication, secure password hashing, Zod validation, and Doc
 
 
 
-auth/
-├── config/         # Database and environment config
-├── controller/     # Route logic and controllers
-├── dist/           # Compiled JS files (after build)
-├── middlewares/    # Express middleware (auth, error handling, etc.)
-├── models/         # Mongoose schemas and models
-├── routes/         # API route definitions
-├── schemas/        # Zod validation schemas
-├── .env            # Environment variables (not committed)
-├── Dockerfile      # Docker configuration
-├── index.ts        # Application entry point
-├── package.json
-├── tsconfig.json
 
-````
+├── config/         # Database and environment config <br/>
+├── controller/     # Route logic and controllers<br/>
+├── dist/           # Compiled JS files (after build)<br/>
+├── middlewares/    # Express middleware (auth, error handling, etc.)<br/>
+├── models/         # Mongoose schemas and models<br/>
+├── routes/         # API route definitions<br/>
+├── schemas/        # Zod validation schemas<br/>
+├── .env            # Environment variables (not committed)<br/>
+├── Dockerfile      # Docker configuration<br/>
+├── index.ts        # Application entry point<br/>
+├── package.json<br/>
+├── tsconfig.json<br/>
+
 
 ---
 
