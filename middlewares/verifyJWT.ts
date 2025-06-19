@@ -14,6 +14,7 @@ const verifyJWT = (req: Request, res: Response, next: NextFunction) => {
   const token = req.cookies?.accessToken;
 
   if (!token) {
+    console.log("Token not found");
      res.sendStatus(401); // Unauthorized
      return
   }
@@ -37,7 +38,7 @@ const verifyJWT = (req: Request, res: Response, next: NextFunction) => {
       }
 
       req.userId = userId;
-
+      console.log("Verified jwt user")
       next();
     }
   );
