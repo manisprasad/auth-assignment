@@ -8,6 +8,7 @@ import { corsOption } from './config/corsConfig';
 import { loginRoute } from './routes/authRoute';
 import { registerRoute } from './routes/registerRoute';
 import { connectDB } from './config/dbConnect';
+import { getMeRoute } from './routes/getMeRoute';
 
 const PORT = process.env.PORT || 8080;
 const app = express();
@@ -32,9 +33,10 @@ app.get('/', (req, res) => {
 
 connectDB().then(() => {
     //Main ROUTES
-    app.use('/auth/login', loginRoute);
-    app.use('/auth/register', registerRoute);
-
+    app.use('/api/login', loginRoute);
+    app.use('/api/register', registerRoute);
+    app.use('/api/profile', getMeRoute);
+    
     // --- START SERVER ---
     app.listen(PORT, () => {
         const link = `\x1b[34mhttp://localhost:${PORT}\x1b[0m`;
